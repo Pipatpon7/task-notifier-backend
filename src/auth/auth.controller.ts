@@ -2,14 +2,14 @@ import { Body, Controller, Post } from '@nestjs/common';
 import { AuthService } from './auth.service';
 
 class RegisterDto {
-  email: string;
-  password: string;
-  name: string;
+  email!: string;
+  password!: string;
+  name!: string;
 }
 
 class LoginDto {
-  email: string;
-  password: string;
+  email!: string;
+  password!: string;
 }
 
 @Controller('auth')
